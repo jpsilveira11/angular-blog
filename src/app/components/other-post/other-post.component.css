@@ -1,0 +1,28 @@
+.container__small-card{
+    width: 700px; 
+}
+.small-card__content{
+    display: flex;
+    flex-direction: row;
+    margin:10px 0 10px 0;
+}
+.small-card__picture{
+    margin-right: 20px;
+    width: 200px;
+    min-width: 200px;
+    height: 100px;
+}
+.small-card__title >h2{
+    font-size: 2rem;
+}
+.small-card__title >h2 >a{
+    text-decoration: none;   
+}
+
+.small-card__description >p{
+    font-size: 1rem;
+}
+.small-card__description >p >a{
+    text-decoration: none;
+    color:#9c9c9c;
+}
