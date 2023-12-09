@@ -1,6 +1,6 @@
 <div class="container__featured-card">
     <div class="featured-card__picture">
-        <a href="#">
+        <a [routerLink]="['post',postID]">
             <img 
             src="{{postPicture}}" 
             alt="{{pictureAlt}}"
@@ -11,9 +11,9 @@
         </a>
     </div>
     <div class="featured-card__title">
-        <h2><a href="#">{{postTitle}}</a></h2>
+        <h2><a [routerLink]="['post',postID]">{{postTitle}}</a></h2>
     </div>
     <div class="featured-card__description">
-        <p><a href="#">{{postDescription}}</a></p>
+        <p><a [routerLink]="['post',postID]">{{postDescription}}</a></p>
     </div>
 </div>

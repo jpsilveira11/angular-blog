@@ -1,14 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'other-post',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './other-post.component.html',
   styleUrl: './other-post.component.css'
 })
 export class OtherPostComponent implements OnInit {
 
+  @Input()
+  postID:string="0";
   @Input()
   postPicture:string = "";
   @Input()

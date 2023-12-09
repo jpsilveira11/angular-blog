@@ -1,1 +1,17 @@
-<p>post works!</p>
+<div class="container__post">
+    <div class="post__cover">
+            <img src="{{postPicture}}" 
+                 alt="Post Cover" 
+                 srcset="">
+    </div>
+    <div class="post__title">
+        <h1>{{postTitle}}</h1>
+        <hr/>
+    </div>
+    <div class="post__content">
+        <p>
+            {{postContent}}
+        </p>
+        <a [routerLink]="['']">Back to home</a>
+    </div>
+</div>

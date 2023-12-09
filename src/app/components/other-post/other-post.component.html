@@ -1,7 +1,7 @@
 <div class="container__small-card">
     <div class="small-card__content">
         <div class="small-card__picture">
-            <a href="#">
+            <a [routerLink]="['post',postID]">
                 <img 
                 src="{{postPicture}}" 
                 alt="{{pictureAlt}}" 
@@ -13,10 +13,10 @@
         </div>
         <div class="small-card__text-content">
             <div class="small-card__title">
-                <h2><a href="#">{{postTitle}}</a></h2>
+                <h2><a [routerLink]="['post',postID]">{{postTitle}}</a></h2>
             </div>
             <div class="small-card__description">
-                <p><a href="#">{{postDescription}}</a></p>
+                <p><a [routerLink]="['post',postID]">{{postDescription}}</a></p>
             </div>
         </div>
     </div>
