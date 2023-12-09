@@ -3,8 +3,8 @@
         <div class="small-card__picture">
             <a href="#">
                 <img 
-                src="../../../assets/images/placeholder.png" 
-                alt="Post" 
+                src="{{postPicture}}" 
+                alt="{{pictureAlt}}" 
                 height="100px"
                 srcset=""
                 />
@@ -13,10 +13,10 @@
         </div>
         <div class="small-card__text-content">
             <div class="small-card__title">
-                <h2><a href="#">This is a secondary Post</a></h2>
+                <h2><a href="#">{{postTitle}}</a></h2>
             </div>
             <div class="small-card__description">
-                <p><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a></p>
+                <p><a href="#">{{postDescription}}</a></p>
             </div>
         </div>
     </div>

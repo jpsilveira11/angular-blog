@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'other-post',
@@ -7,6 +7,22 @@ import { Component } from '@angular/core';
   templateUrl: './other-post.component.html',
   styleUrl: './other-post.component.css'
 })
-export class OtherPostComponent {
+export class OtherPostComponent implements OnInit {
+
+  @Input()
+  postPicture:string = "";
+  @Input()
+  pictureAlt:string = "";
+  @Input()
+  postTitle:string = "";
+  @Input()
+  postDescription:string = "";
+  
+  constructor() {}
+  
+  ngOnInit(): void {
+  console.log("Other Post init")
+    //throw new Error('Method not implemented.');
+  }
 
 }
